@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <title>Caçadores de Bugs · Alerta de Ofertas Verificadas</title>
-<link rel="stylesheet" href="style.css">
+<!-- O truque do cache está aqui: ?v=2 -->
+<link rel="stylesheet" href="style.css?v=2">
 
 <!-- Meta Pixel Code -->
 <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>
@@ -33,14 +34,12 @@
 
     <h1 class="title">Caçadores de <span>Bugs</span></h1>
     
-    <!-- Copy Otimizada: Foco em Escassez e Velocidade -->
     <p class="subtitle">
       Garimpamos <b>preços quebrados e cupons raros</b> nas maiores lojas do Brasil, todos os dias. 
       <br><br>
       <span style="color: var(--teal); font-weight: 600;">Bugs e erros de preço duram poucos minutos. Quem está no VIP pega primeiro!</span>
     </p>
 
-    <!-- Estrutura de Logos no Topo -->
     <div class="stores-row">
       <div class="store-chip">
         <img src="topo-amazon.png" alt="Amazon" style="height: 20px;">
@@ -56,7 +55,6 @@
       </div>
     </div>
 
-    <!-- Scanner Radar Dinâmico -->
     <div class="monitor-wrap">
       <div class="m-ring r1"></div>
       <div class="m-ring r2"></div>
@@ -64,7 +62,6 @@
       <div class="m-sweep"></div>
       <div class="m-pulse"></div>
       
-      <!-- O centro do radar -->
       <div class="m-core">
         <img src="radar-amazon.png" alt="Amazon" class="scanner-logo sl-1">
         <img src="radar-ml.png" alt="Mercado Livre" class="scanner-logo sl-2">
@@ -72,14 +69,12 @@
         <img src="radar-shein.png" alt="SHEIN" class="scanner-logo sl-4">
       </div>
 
-      <!-- Tags flutuantes táticas -->
       <div class="m-tag mt1">-80%</div>
       <div class="m-tag mt2">VIP</div>
       <div class="m-tag mt3">OFF</div>
       <div class="m-tag mt4">LIVE</div>
     </div>
 
-    <!-- Mural de Confiança -->
     <div class="trust-grid">
       <div class="trust-item">
         <div class="trust-icon-wrapper">
@@ -104,7 +99,6 @@
     <!-- CTA Botões (WhatsApp e Telegram) -->
     <div class="cta-wrap">
       <div class="cta-group">
-        <!-- Botão WhatsApp -->
         <button class="cta-btn-wpp" onclick="entrarNoGrupo('whatsapp')" type="button">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.22 5.22 0 0 0-.571-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
           <div class="btn-text">
@@ -113,7 +107,6 @@
           </div>
         </button>
 
-        <!-- Botão Telegram -->
         <button class="cta-btn-tg" onclick="entrarNoGrupo('telegram')" type="button">
           <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.888-.666 3.473-1.513 5.79-2.511 6.95-2.995 3.307-1.374 3.997-1.615 4.449-1.621z"/></svg>
           <div class="btn-text">
@@ -134,29 +127,23 @@
     </div>
 
     <div class="proof-scroller">
-      <!-- Capa do Carrossel -->
       <div class="proof-card">
         <img src="photo_5161334407053380944_y.jpg" alt="Achados de Tecnologia: Ofertas Reais" loading="lazy">
       </div>
-      <!-- Oferta 1: Monitor Gamer LG -->
       <div class="proof-card">
         <img src="photo_5161334407053380945_y.jpg" alt="Alerta de oferta: Monitor Gamer LG UltraGear 24 180Hz" loading="lazy">
       </div>
-      <!-- Oferta 2: Notebook Samsung -->
       <div class="proof-card">
         <img src="photo_5161334407053380948_y.jpg" alt="Alerta de oferta: Notebook Samsung Galaxy Book4" loading="lazy">
       </div>
-      <!-- Oferta 3: Controle Dualsense -->
       <div class="proof-card">
         <img src="photo_5161334407053380946_y.jpg" alt="Alerta de oferta: Controle Dualsense Edge PS5" loading="lazy">
       </div>
-      <!-- Oferta 4: Impressora Epson -->
       <div class="proof-card">
         <img src="photo_5161334407053380947_y.jpg" alt="Alerta de oferta: Impressora Epson Ecotank" loading="lazy">
       </div>
     </div>
     <div class="scroll-hint">Deslize para ver mais ofertas 👉</div>
-
   </section>
 
   <section class="final">
@@ -165,7 +152,6 @@
       <!-- CTA Botões Final -->
       <div class="cta-wrap">
         <div class="cta-group">
-          <!-- Botão WhatsApp -->
           <button class="cta-btn-wpp" onclick="entrarNoGrupo('whatsapp')" type="button">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.22 5.22 0 0 0-.571-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
             <div class="btn-text">
@@ -174,7 +160,6 @@
             </div>
           </button>
   
-          <!-- Botão Telegram -->
           <button class="cta-btn-tg" onclick="entrarNoGrupo('telegram')" type="button">
             <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.888-.666 3.473-1.513 5.79-2.511 6.95-2.995 3.307-1.374 3.997-1.615 4.449-1.621z"/></svg>
             <div class="btn-text">
@@ -186,7 +171,6 @@
       </div>
   </section>
 
-  <!-- Rodapé com Compliance para Evitar Bloqueios no FB Ads / TikTok -->
   <footer>
       <p>© 2026 Caçadores de Bugs. Todos os direitos reservados.</p>
       <p style="margin-top: 10px; font-size: 9px; opacity: 0.4; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.4;">
@@ -194,24 +178,15 @@
       </p>
   </footer>
 
-  <!-- Script Lógico (Roteamento de Grupos) -->
   <script>
-    // Lista de Links do WhatsApp (Sorteio aleatório se tiver mais de um)
     const linksWhatsapp = [
       "https://chat.whatsapp.com/SEU_LINK_WPP_01",
       "https://chat.whatsapp.com/SEU_LINK_WPP_02"
     ];
-    
-    // Link Único do Canal do Telegram
     const linkTelegram = "https://t.me/SEU_CANAL_TELEGRAM_AQUI";
 
     function entrarNoGrupo(plataforma) {
-      // Dispara o Pixel avisando que virou Lead
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'Lead');
-      }
-      
-      // Delay de 300ms para dar tempo do pixel registrar o evento de lead
+      if (typeof fbq !== 'undefined') { fbq('track', 'Lead'); }
       setTimeout(function() {
         if (plataforma === 'whatsapp') {
             const linkSorteado = linksWhatsapp[Math.floor(Math.random() * linksWhatsapp.length)];
