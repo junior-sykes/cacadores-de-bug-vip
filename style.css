@@ -438,3 +438,37 @@ footer{
   color: rgba(255,255,255,.32);
   line-height:1.7;
 }
+
+/* ============ ANIMAÇÃO DE PORCENTAGEM NO RADAR ============ */
+.discount-pop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 26px;
+  font-weight: 900;
+  z-index: 20;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  animation: pop-discount 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(10, 20, 32, 0.9);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  pointer-events: none;
+}
+
+/* Sincronização e Cores Hacker Neon */
+.dp-1 { color: #00ff88; border-color: #00ff88; text-shadow: 0 0 10px rgba(0,255,136,0.6); animation-delay: 0.8s; } /* Amazon */
+.dp-2 { color: #ffeb3b; border-color: #ffeb3b; text-shadow: 0 0 10px rgba(255,235,59,0.6); animation-delay: 3.8s; } /* Merc. Livre */
+.dp-3 { color: #ff3366; border-color: #ff3366; text-shadow: 0 0 10px rgba(255,51,102,0.6); animation-delay: 6.8s; } /* Shopee */
+.dp-4 { color: #00e5ff; border-color: #00e5ff; text-shadow: 0 0 10px rgba(0,229,255,0.6); animation-delay: 9.8s; } /* Shein */
+
+/* O movimento de Pulo (Pop) */
+@keyframes pop-discount {
+  0%, 8% { opacity: 0; transform: translate(-50%, -50%) scale(0.5) rotate(0deg); }
+  12% { opacity: 1; transform: translate(-50%, -50%) scale(1.2) rotate(-10deg); }
+  15% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(-10deg); }
+  22% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(-10deg); }
+  25%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5) rotate(0deg); }
+}
